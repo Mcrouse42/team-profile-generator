@@ -1,7 +1,7 @@
 const { expect, test } = require("@jest/globals");
 const Engineer = require("../lib/Engineer");
 
-test("creates a Engineer object", () => {
+test("creates a engineer object", () => {
   const engineer = new Engineer("Jim", "1", "jim@gmail.com", "GithubLink");
 
   expect(engineer.name).toBe("Jim");
