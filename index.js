@@ -5,6 +5,7 @@ const Employee = require("./lib/Employee");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const createProfile = require("./src/template");
 
 const teamProfiles = [];
 
@@ -116,15 +117,23 @@ function internPrompt() {
     // addEmployee();
 };
 
-// function addEmployee() {
-//     console.log(teamProfiles);
-//     fs.writeFile('./dist/teamProfiles.html', generateProfile(teamProfiles), err => {
-//         if (err) {
-//             console.log(err);
-//             return
-//         }
-//         console.log('You have made an new Team Profile!');
-//     });
+//function not working
+
+// const promptInquirer = () => inquirer.prompt(prompt);
+
+// // Function to write HTML file
+// const generateProfile = () => {
+//         fs.generateProfile(fileName, data, (err) => {
+//         if (err) throw err
+//         console.log('Team Profile Generated Successfully!')
+//     })
+// }
+
+// const init = () => {
+//   promptInquirer().then((answers) => {
+//     const profile = generateProfile(answers);
+//     generateProfile("./dist/template.js", markdownFile);
+//   });
 // };
 
 managerPrompt();
