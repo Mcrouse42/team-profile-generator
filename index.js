@@ -33,8 +33,8 @@ function managerPrompt() {
             message: "What is the office number of your manager?"
         }
     ])
-
-}
+    addEmployee();
+};
 
 function addEmployee() {
     inquirer.prompt([
@@ -58,11 +58,11 @@ function addEmployee() {
                     internPrompt()
                     break;
                 case "Finish building team":
-                    finishTeam()
+                    finishTeam() //?
         }
     })
 
-}
+};
 
 function engineerPrompt() {
     inquirer.prompt([
@@ -87,7 +87,8 @@ function engineerPrompt() {
             message: "What is the engineers username for Github?"
         }
     ])
-}
+    // addEmployee();
+};
 
 function internPrompt() {
     inquirer.prompt([
@@ -112,4 +113,7 @@ function internPrompt() {
             message: "Where does the intern go to school?",
         }
     ])
-}
+    // addEmployee();
+};
+
+managerPrompt();
