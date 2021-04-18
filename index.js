@@ -116,4 +116,15 @@ function internPrompt() {
     // addEmployee();
 };
 
+// function addEmployee() {
+//     console.log(teamProfiles);
+//     fs.writeFile('./dist/teamProfiles.html', generateProfile(teamProfiles), err => {
+//         if (err) {
+//             console.log(err);
+//             return
+//         }
+//         console.log('You have made an new Team Profile!');
+//     });
+// };
+
 managerPrompt();
