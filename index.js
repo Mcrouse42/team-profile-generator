@@ -8,7 +8,7 @@ const Intern = require("./lib/Intern");
 
 const teamProfiles = [];
 
-//need talk to TA about how to set up
+//need talk to TA about how to set up functions to add information 
 
 function managerPrompt() {
     inquirer.prompt([
@@ -62,4 +62,54 @@ function addEmployee() {
         }
     })
 
+}
+
+function engineerPrompt() {
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "engineerName",
+            message: "What is the name of the engineer?"
+        },
+        {
+            type: "input",
+            name: "engineerID",
+            message: "What is the engineers id?"
+        },
+        {
+            type: "input",
+            name: "engineerEmail",
+            message: "What is the email address of the engineer?"
+        },
+        {
+            type: "input",
+            name: "engineerGit",
+            message: "What is the engineers username for Github?"
+        }
+    ])
+}
+
+function internPrompt() {
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "internName",
+            message: "What is the name of the intern?",
+        },
+        {
+            type: "input",
+            name: "internID",
+            message: "What is the interns ID?"
+        },
+        {
+            type: "input",
+            name: "internEmail",
+            message: "What is email address of the intern?",
+        },
+        {
+            type: "input",
+            name: "internSchool",
+            message: "Where does the intern go to school?",
+        }
+    ])
 }
