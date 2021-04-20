@@ -18,7 +18,7 @@
   In order to install first you must clone the repo from Github. To do so enter this into your command line/terminal:
   `git clone git@github.com:Mcrouse42/team-profile-generator.git`
   
-  After cloning the repo you will need to install npm, which is a package manager for Javascript. First, in your command line/terminal, make sure you are in the   correct directory. In this case it should be something like "team-profile-generator". Then you want to enter this into command line/terminal:
+  After cloning the repo you will need to install npm, which is a package manager. First, in your command line/terminal, make sure you are in the   correct directory. In this case it should be something like "team-profile-generator". Then you want to enter this into command line/terminal:
   `npm install`
   
   
