@@ -141,7 +141,7 @@ function internPrompt() {
           answers.internEmail,
           answers.internSchool
         );
-        teamProfile.push(intern);
+        teamProfiles.push(intern);
         addEmployee();
       })
 };
